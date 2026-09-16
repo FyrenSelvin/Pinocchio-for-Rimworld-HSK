@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Pinocchio</name>
+	<author>Fyren_Selvin</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>fyren_selvin.pinocchio</packageId>
+	<description>
+(ENG)
+	This mod adds the playable Pinocchio race: people whose limbs and vital organs are replaced with primitive prosthetics.
+(RUS)
+Этот мод добавляет сценарии с буратинами.
+</description>
+	<modDependencies>
+		<li>
+			<packageId>skyarkhangel.HSK</packageId>
+			<displayName>Core SK</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>skyarkhangel.HSK</li>
+	</loadAfter>
+</ModMetaData>

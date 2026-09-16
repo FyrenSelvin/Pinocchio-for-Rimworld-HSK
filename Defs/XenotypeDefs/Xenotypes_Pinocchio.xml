@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Pinocchio</defName>
+		<label>Pinocchio</label>
+		<description>People whose limbs and vital organs have been replaced by primitive prosthetics.</description>
+		<descriptionShort>a Pinocchio, sustained by primitive prosthetics</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>false</inheritable>
+	</XenotypeDef>
+</Defs>
