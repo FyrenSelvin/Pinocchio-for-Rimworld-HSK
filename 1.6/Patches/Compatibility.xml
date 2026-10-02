@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Planet layers are mandatory in 1.6, including games without Odyssey. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ScenarioDef[defName="Pinocchio"]/scenario</xpath>
+    <value>
+      <surfaceLayer>
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ScenarioDef[defName="Pinocchio"]/scenario/parts</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+        <def>PlanetLayer</def>
+        <tag>Orbit</tag>
+        <layer>Orbit</layer>
+        <settingsDef>Orbit</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Surface>
+            <zoomMode>ZoomIn</zoomMode>
+          </Surface>
+        </connections>
+      </li>
+    </value>
+  </Operation>
+  <!-- Keep the old field in shared XML for RimWorld 1.5. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="PinocchioColonist"]/defaultFactionType</xpath>
+    <value>
+      <defaultFactionDef>PlayerColony</defaultFactionDef>
+    </value>
+  </Operation>
+</Patch>

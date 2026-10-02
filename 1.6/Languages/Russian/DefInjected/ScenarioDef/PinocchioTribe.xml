@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PinocchioTribe.label>Пиноккио: потерянное племя</PinocchioTribe.label>
+  <PinocchioTribe.description>Кровожадные машины уничтожили ваше племя. Пятерым Пиноккио удалось спастись. Теперь вам предстоит построить новый дом, полагаясь на примитивные протезы и племенные припасы.\n\nУсловия «Потерянного племени» HSK, но со стартом за Пиноккио и небольшим дополнительным запасом пеммикана: 300 вместо 220.</PinocchioTribe.description>
+  <PinocchioTribe.scenario.summary>Пятеро Пиноккио восстанавливают своё племя. Условия HSK и 300 пеммикана.</PinocchioTribe.scenario.summary>
+  <PinocchioTribe.scenario.parts.GameStartDialog.text>Кровожадные машины уничтожили вашу деревню. Пятерым Пиноккио удалось пережить долгое бегство в глушь. Примитивные протезы ещё держатся, но от прежнего дома остались лишь воспоминания.\n\nТеперь племени предстоит начать всё сначала.</PinocchioTribe.scenario.parts.GameStartDialog.text>
+  <PinocchioTribe.scenario.parts.ConfigurePawnsXenotypes.customSummary>Начните игру за пятерых Пиноккио — взрослых или детей.</PinocchioTribe.scenario.parts.ConfigurePawnsXenotypes.customSummary>
+  <PinocchioTribe.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description>Пиноккио, кроме младенцев</PinocchioTribe.scenario.parts.ConfigurePawnsXenotypes.xenotypeCounts.0.description>
+</LanguageData>

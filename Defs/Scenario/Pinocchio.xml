@@ -12,17 +12,24 @@
         <factionDef>PlayerColony</factionDef>
       </playerFaction>
       <parts>
-		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
-			<def>ConfigurePawnsKindDefs</def>
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+			<def>ConfigurePawnsXenotypes</def>
 			<pawnChoiceCount>8</pawnChoiceCount>
-			<leftBehindPawnKind>PinocchioColonist</leftBehindPawnKind>
-			<kindCounts>
+			<overrideKinds>
 				<li>
-					<kindDef>PinocchioColonist</kindDef>
-					<count>3</count>
-					<requiredAtStart>true</requiredAtStart>
+					<xenotype>Pinocchio</xenotype>
+					<pawnKind>PinocchioColonist</pawnKind>
 				</li>
-			</kindCounts>
+			</overrideKinds>
+			<xenotypeCounts>
+				<li>
+					<xenotype>Pinocchio</xenotype>
+					<count>3</count>
+					<description>adult Pinocchios</description>
+					<requiredAtStart>true</requiredAtStart>
+					<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+				</li>
+			</xenotypeCounts>
 		</li>
 
         <!-- Player starting stuff spawn method-->
@@ -80,10 +87,12 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Apparel_FlakPants</thingDef>
+          <stuff>Synthread</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Apparel_FlakVest</thingDef>
+          <stuff>Synthread</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>

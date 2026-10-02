@@ -2,23 +2,37 @@
 <ModMetaData>
 	<name>Pinocchio</name>
 	<author>Fyren_Selvin</author>
+	<modVersion>1.0.0</modVersion>
 	<supportedVersions>
-		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
-	<packageId>fyren_selvin.pinocchio</packageId>
+	<packageId>fyrenselvin.pinocchio</packageId>
 	<description>
 (ENG)
-	This mod adds the playable Pinocchio race: people whose limbs and vital organs are replaced with primitive prosthetics.
+	Pinocchio 1.0.0 for RimWorld 1.6 and Hardcore SK. Adds a playable xenotype whose limbs and organs are replaced with primitive prostheses, with 20 replacement options and configurable body-part groups. Includes a three-person crashlanded start and a five-person tribal start. Requires Harmony, Biotech and Core SK; use with the HSK modpack. Settings are in Russian.
 (RUS)
-Этот мод добавляет сценарии с буратинами.
+Пиноккио 1.0.0 для RimWorld 1.6 и Hardcore SK. Играбельный ксенотип людей с примитивными протезами: 20 вариантов замен и настройки отдельных групп частей тела. Два сценария — трое выживших после крушения и пятеро членов потерянного племени. Требуются Harmony, Biotech и Core SK; мод предназначен для сборки HSK. Настройки на русском языке.
 </description>
 	<modDependencies>
 		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+			<downloadUrl>https://store.steampowered.com/app/1826140/</downloadUrl>
+		</li>
+		<li>
 			<packageId>skyarkhangel.HSK</packageId>
 			<displayName>Core SK</displayName>
+			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 		<li>skyarkhangel.HSK</li>
 	</loadAfter>
 </ModMetaData>

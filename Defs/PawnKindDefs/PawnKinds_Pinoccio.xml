@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PinocchioColonist</defName>
 		<label>Pinocchio</label>
 		<race>Human</race>
@@ -11,9 +11,10 @@
 		<apparelMoney>1800~2400</apparelMoney>
 		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Pinocchio MayRequire="Ludeon.RimWorld.Biotech">999</Pinocchio>
+				<Pinocchio MayRequire="Ludeon.RimWorld.Biotech">1</Pinocchio>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>

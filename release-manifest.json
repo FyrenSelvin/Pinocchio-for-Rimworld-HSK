@@ -1,0 +1,60 @@
+{
+  "mod": "Pinocchio",
+  "version": "1.0.0",
+  "rimworld": "1.6",
+  "packageId": "fyrenselvin.pinocchio",
+  "assemblyVersion": "1.0.0.0",
+  "verification": "Release build; six automated check suites; XML parse; ZIP byte verification. No live game test.",
+  "files": [
+    {
+      "path": "About/About.xml",
+      "bytes": 1926,
+      "sha256": "36F7C8FDD95FE1CDFDCAEB3687B0368637C7B0B1A2A4D60B0A6AB086E2F74FDC"
+    },
+    {
+      "path": "Defs/PawnKindDefs/PawnKinds_Pinoccio.xml",
+      "bytes": 713,
+      "sha256": "5C972426BE739FF2E3A98AE11A091489ED4A0DE9EAD958E9AC0B90621F847586"
+    },
+    {
+      "path": "Defs/Scenario/Pinocchio.xml",
+      "bytes": 5368,
+      "sha256": "48E2F41619A235E740804318B12982D9A3976B2FFE63720393EE8EF243D66B94"
+    },
+    {
+      "path": "Defs/XenotypeDefs/Xenotypes_Pinocchio.xml",
+      "bytes": 464,
+      "sha256": "AB35A9C3D2041EBF8980736C3FEEE744C0E3391CA157620365EFD8DCD3AA5C8A"
+    },
+    {
+      "path": "1.6/Assemblies/Pinocchio.dll",
+      "bytes": 22528,
+      "sha256": "17D7B354F9287DD117BB5C768FCE54E661FDC76054B468EB4D4435A4002DCC11"
+    },
+    {
+      "path": "1.6/Defs/Scenario/PinocchioTribe.xml",
+      "bytes": 6456,
+      "sha256": "D29B6E2F6D806F7524B98A24B1CD7521B53F385E1B512B49CBAA2E8C9C998E22"
+    },
+    {
+      "path": "1.6/Languages/Russian/DefInjected/ScenarioDef/PinocchioTribe.xml",
+      "bytes": 1957,
+      "sha256": "03756A8659F42DBC985D0709AE5E2B3D9B8CB3DA585A540CE87A81E5169E750A"
+    },
+    {
+      "path": "1.6/Patches/Compatibility.xml",
+      "bytes": 1456,
+      "sha256": "918EE519A4EE9B7C6786F705DA33FA69FE2D252E3354C404AECED4FF2D0D9B98"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6492,
+      "sha256": "6335847605E3CC99B917E1A79C7D8E1E56D11E43345C2868C898FB17DC1FE2D2"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1806,
+      "sha256": "45DA3E68045BE5C8E7DF3AD4C099F4FDBA78553C3D8C72FAEE0AD0FE0758A558"
+    }
+  ]
+}

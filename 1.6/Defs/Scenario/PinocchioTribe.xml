@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenarioDef>
+    <scenario>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerTribe</factionDef>
+      </playerFaction>
+      <surfaceLayer>
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
+      <parts>
+        <li MayRequire="Ludeon.RimWorld.Odyssey" Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <tag>Orbit</tag>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>true</hide>
+          <connections>
+            <Surface>
+              <zoomMode>ZoomIn</zoomMode>
+            </Surface>
+          </connections>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>The blood machines destroyed your village. Five Pinocchios survived the long flight into the wilderness. Your primitive prostheses still hold together, and your tribe must begin again.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="SK.Events.ScenPart_Corpses">
+          <def>StartwithCorpses</def>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <customSummary>Start with five Pinocchios (adults or children).</customSummary>
+          <xenotypeCounts>
+            <li>
+              <xenotype>Pinocchio</xenotype>
+              <count>5</count>
+              <description>non-baby Pinocchio</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+          <overrideKinds>
+            <li>
+              <xenotype>Pinocchio</xenotype>
+              <pawnKind>Tribesperson</pawnKind>
+            </li>
+          </overrideKinds>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>Malnutrition</hediff>
+          <severityRange>
+            <min>0.2</min>
+            <max>0.4</max>
+          </severityRange>
+        </li>
+        <li Class="ScenPart_SetNeedLevel">
+          <def>SetNeedLevel</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>1.0</chance>
+          <need>Food</need>
+          <levelRange>
+            <min>0</min>
+            <max>0.1</max>
+          </levelRange>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Club</thingDef>
+          <stuff>WoodPlank</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Spear</thingDef>
+          <stuff>Bronze</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>Bronze</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Bow_Short</thingDef>
+          <stuff>WoodLog</stuff>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Ammo_Arrow_Stone</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>3</count>
+          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <visible>false</visible>
+          <thingDef>ShipChunk</thingDef>
+          <count>10</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <visible>false</visible>
+          <thingDef>ShipMechChunk</thingDef>
+          <count>6</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+          <stuff>Bronze</stuff>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TFJ_Tool_Building_Hammer</thingDef>
+          <stuff>WoodPlank</stuff>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TFJ_Tool_Sickle</thingDef>
+          <stuff>Bronze</stuff>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+          <stuff>Bronze</stuff>
+          <count>2</count>
+        </li>
+      </parts>
+      <summary>Five Pinocchio tribespeople rebuild their home. HSK Lost Tribe conditions, with 300 pemmican.</summary>
+    </scenario>
+    <defName>PinocchioTribe</defName>
+    <label>Pinocchio: Lost Tribe</label>
+    <description>Five Pinocchios escaped the destruction of their tribe. Rebuild with primitive prostheses, tribal supplies, and a little extra pemmican.</description>
+  </ScenarioDef>
+</Defs>
